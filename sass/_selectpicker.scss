@@ -1,0 +1,16 @@
+.selectpicker{
+  width: 200px;
+	height: 40px;
+  background-color: $navy;
+  color: $secondary;
+  border-radius: 10px;
+  font-weight: bold;
+  option:checked{
+    font-weight: bold;
+  }
+} 
+
+.filters {
+	width: 100%;
+  margin: auto;
+}

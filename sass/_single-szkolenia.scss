@@ -1,0 +1,81 @@
+.content-section {
+    height: 100%;
+  }
+
+  .sidebar-section {
+    height: 100%;
+  }
+  .sticky-topppers{
+    
+    position:sticky;
+    top:100px;
+  }
+
+  .wpcf7{
+    font-size: 1rem;
+    .wpcf7-not-valid-tip{
+      transition: .2s ease-in-out;
+    }
+      input[type="text"],input[type="tel"],input[type="email"],textarea{
+        background-color: $szary;
+        color: $czarny;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border: none;
+        transition: 0.3s ease-in-out;
+      }
+      textarea{
+        height: 100px;
+      }
+      input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus{
+        padding: 20px;
+        font-size: 1.1rem
+      }
+      input{
+        margin: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      input[type="checkbox"]{
+        margin:0;
+      }
+      input[type="submit"]{
+        border: 1px solid $szary;
+        padding: 30px;
+        background-color: $czarny;
+        color: $szary;
+        transition: 0.25s ease-in-out;
+      }
+      input[type="submit"]:hover{
+        background-color: $szary;
+        color: $czarny;
+      }
+      label{
+        color: $szary;
+        font-size: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+      .wpcf7-response-output,.wpcf7-list-item-label{
+        color: $szary;
+        font-size: 0.9rem;
+      }
+      .wpcf7-spinner{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+ }
+
+ .modal-description{
+  color: $szary;
+  .modal-description-title{
+    color: $czerwony!important;
+  }
+}
+.btn-close{
+  background-color: $szary;
+}

@@ -1,0 +1,242 @@
+
+.section-left{
+  border-left: 1px solid $czerwony;
+}
+.section-right{
+  img{
+    filter: drop-shadow(13px 5px 5px rgba(0, 0, 0, 0.25));
+  }
+}
+.main-h1,.main-h4{
+  color: $szary;
+}
+.main-h1{
+}
+.main-h4{
+  font-size:medium;
+}
+.button-section{
+  color: $szary;
+  background-color: $czerwony;
+}
+.container-main{
+  position: relative;
+  width: 100%;
+  background-color: $navy; 
+  //max-height: 91vh!important;
+  height: 91vh!important;
+  .row{
+    height: 80vh!important; 
+  }
+  &::before{
+    position: absolute;
+    height: 91vh!important;
+    content: '';
+    opacity: 0.2;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url('../PIBiO/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -200px 500px;
+  }
+  
+}
+
+#home{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    display: block; 
+    bottom: 10%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    opacity: .8;
+    a{
+      color:$szary;
+    }
+}
+// MEDIA
+@media(max-width: 991px) {
+  .section-right{
+    margin-left: 0px;
+    //margin-top: -50px;
+    img{
+     width: 65vw; 
+    }
+  }
+  .background-image{
+    background-position: -700px 420px;
+  }
+  .asl_w_container{
+    margin: 0px 0px 0px 5px;
+    width: 99%;
+  }
+  .main-h1{
+  }
+  #about-section{
+    .container{
+      .col-md-6:first-child{
+        border-right: none;
+        border-bottom: 1px solid $czerwony;
+      }
+    }
+  }
+  .container-main{
+    height: auto!important; 
+    padding-top: 10%;
+    padding-bottom: 10%;
+    .row{
+      height: auto!important;
+    }
+    img{
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+    &::before{
+      position: absolute;
+      height: auto!important;
+      content: '';
+      opacity: 0.2;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image:url('../PIBiO/img/background.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: -200px 500px;
+    }
+  }
+  #home{
+    display: none;
+  }
+  #trainings-section{
+    .post-news-head{
+      img{
+        height: 200px!important;
+      }
+    }
+  }
+}
+
+#news-section{
+  background-color: $szary;
+  .post-news-head{
+
+    background: linear-gradient(180deg, rgba(255,2,2,1) 0%, rgba(0,0,0,1) 100%);
+
+    border-radius: 10px;
+    //max-width: 330px;
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 210px;
+      object-fit: contain!important;
+    }
+    h4{
+      a{
+        text-decoration: none;
+        line-height: 15px;
+      }
+    }
+    .post-news-title{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(217,217,217,0.5);
+    }
+  }
+}
+
+#trainings-section{
+  background-color: $czarny;
+  .post-news-head{
+    position:relative;
+    background: linear-gradient(180deg, rgba(255,2,2,1) 0%, rgba(0,0,0,1) 100%);
+
+    border-radius: 10px;
+    //max-width: 330px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 400px;
+      object-fit: cover!important;
+    }
+    
+    .post-news-title{
+      width: 100%;
+    }
+    .post-category-trainings{
+      position: absolute;
+      left:0;
+      bottom:0;
+      background-color: #E7302A;
+      border-top-right-radius: 27px;
+      width: auto;
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: center;
+      a{
+        color: $szary;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+  h4{
+    a{
+      text-decoration: none;
+      line-height: 15px;
+    }
+  }
+}
+#about-section{
+  background-color: $czarne;
+  .container{
+    background-color: $szary;
+    .about-text{
+      //border-left: 1px solid $czerwony;
+      width: 75%;
+    }
+    .col-md-6:first-child{
+      border-right: 1px solid $czerwony;
+    }
+  }
+}
+// animacja strzalki
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.animation-news, .animation-trainings{
+  img{
+    transition: 0.2s ease-in-out;
+  }
+}
+.animation-news:hover, .animation-trainings:hover{
+  img{
+    transform: scale(1.1);
+  }
+}

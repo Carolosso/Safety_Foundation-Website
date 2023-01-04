@@ -1,0 +1,26 @@
+footer{
+  ul{
+    li{
+      a{
+        text-decoration: none;
+        font-family: Lato;
+        color: $white;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.copyright{
+  background-color: $czarny;
+}
+.footer-logo{
+  max-height: 350px!important;
+  opacity: .2;
+  width: auto;
+}
+#footer_links{
+    a{
+      text-decoration: none!important;
+    }
+    font-size: 12px;
+}

@@ -1,0 +1,110 @@
+.security-portrait{
+  img{
+    width: auto;
+    border-radius: 50%;
+    max-height: 150px;
+    //filter: drop-shadow(0px 10px 20px #7a1815); 
+  }
+}
+.card-img {
+  img{
+    height: 100px;
+  }
+}
+.card{
+  background: none;
+}
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+
+
+#wpcf7-f419-o1{
+  font-size: 1rem;
+    .wpcf7-not-valid-tip{
+      transition: .2s ease-in-out;
+    }
+      input[type="text"],input[type="tel"],input[type="email"],select,textarea{
+        background-color: $szary;
+        color: $czarny;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border: none;
+        transition: 0.3s ease-in-out;
+      }
+      textarea{
+        height: 100px;
+      }
+      input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus{
+        padding: 20px;
+        font-size: 1.1rem
+      }
+      input{
+        margin: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      input[type="checkbox"]{
+        margin:0;
+      }
+      input[type="submit"]{
+        border: 1px solid $szary;
+        padding: 30px;
+        background-color: $czarny;
+        color: $szary;
+        transition: 0.25s ease-in-out;
+      }
+      input[type="submit"]:hover{
+        background-color: $szary;
+        color: $czarny;
+      }
+      label{
+        color: $szary;
+        font-size: 0.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+      .wpcf7-response-output,.wpcf7-list-item-label{
+        color: $szary;
+        font-size: 0.9rem;
+      }
+      .wpcf7-spinner{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}

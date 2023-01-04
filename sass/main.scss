@@ -1,0 +1,31 @@
+@import "theme_variables"; 
+@import "bootstrap5/bootstrap";      
+@import "wp_basic_styles";      
+@import "picostrap";  
+@import "navbar";
+@import "footer";
+@import "home";
+@import "trainings-archive";
+@import "strona_glowna";
+@import "single-szkolenia";
+@import "archive-blog";
+@import "security-assistance";
+@import "single";
+@import "zarzad-i-eksperci";
+@import "wolontariuszem";
+@import "animations";
+@import "selectpicker";
+@import "../js/slick-master/slick/slick";
+@import "../js/slick-master/slick/slick-theme";
+
+//@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  //font-family: 'Alatsi', sans-serif;
+  font-family: 'Lato';
+  background-color: $szary;
+}

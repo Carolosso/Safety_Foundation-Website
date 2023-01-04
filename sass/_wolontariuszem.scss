@@ -1,0 +1,64 @@
+.volunteer-bg{
+  background-image: url('../PIBiO/img/bg_lines-black.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+}
+
+#wpcf7-f412-o1{
+  background-color: $czarny;
+  padding: 50px;
+
+  .wpcf7-not-valid-tip{
+    transition: .2s ease-in-out;
+    }
+    input[type="text"],input[type="tel"],input[type="email"],input[type="number"],textarea{
+      background-color: $szary;
+      color: $czarny;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      border: none;
+      transition: 0.3s ease-in-out;
+    }
+    input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus{
+      padding: 20px;
+      font-size: 1.1rem
+    }
+    input{
+      margin: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="checkbox"]{
+      margin:0;
+    }
+    input[type="submit"]{
+      border: 1px solid $szary;
+      padding: 30px;
+      background-color: $czarny;
+      color: $szary;
+      transition: 0.25s ease-in-out;
+    }
+    input[type="submit"]:hover{
+      background-color: $szary;
+      color: $czarny;
+    }
+    label{
+      color: $szary;
+      font-size: 0.9rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+    .wpcf7-response-output,.wpcf7-list-item-label{
+      color: $szary;
+      font-size: 0.9rem;
+    }
+    .wpcf7-spinner{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
