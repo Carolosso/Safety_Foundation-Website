@@ -19,10 +19,6 @@ This project is a **custom WordPress theme** designed for:
 - **Navigation & Options**: Custom nav walker and options management.
 
 ---
-![alt text](<img width="1955" height="1305" alt="image" src="https://github.com/user-attachments/assets/28a697a6-c7e7-461e-a7e2-bdbf8af9353d" />
- "")
-
----
 
 ## 📁 Key Directories
 
