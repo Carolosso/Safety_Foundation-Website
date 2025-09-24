@@ -30,7 +30,9 @@ This project is a **custom WordPress theme** designed for:
 - `img/` — Images and graphics
 
 ---
+<img width="1955" height="1305" alt="PIBiO" src="https://github.com/user-attachments/assets/bea71e56-529a-4fb9-ab5c-54c30aabadad" />
 
+---
 ## 📝 Conventions
 
 - **Descriptive file naming** for templates and assets
